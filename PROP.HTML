@@ -1,0 +1,408 @@
+<html lang="en" class="scroll-smooth" >
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Villa Details - HouseHunter</title>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="PROP.CSS" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fi fi-br-home"></i>
+                <span class="logo-text">HouseHunter</span>
+            </div>
+
+            <nav class="nav">
+                <a href="#" class="nav-link">Categories</a>
+                <a href="#" class="nav-link">Buy</a>
+                <a href="#" class="nav-link active">Rent</a>
+            </nav>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="#999">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                    <input type="text" class="search-input" placeholder="Search" />
+                </div>
+
+                <div class="notification-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M18 8a6 6 0 00-12 0v5l-2 2h16l-2-2V8" />
+                        <path d="M13.73 21a2 2 0 01-3.46 0" />
+                    </svg>
+                </div>
+
+                <div class="user-avatar">
+                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop&crop=face" alt="User profile photo of a smiling person with short hair and casual clothing" />
+                </div>
+            </div>
+        </header>
+
+        <a href="#" class="back-button">
+            <i class="fi fi-rr-angle-left"></i>
+            Back to Properties
+        </a>
+
+        <!-- Main Property Section -->
+        <div class="property-main-section">
+            <div class="property-gallery">
+                <div class="main-image">
+                    <img id="mainImage" src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Luxury villa exterior view with modern architecture and lush greenery" />
+                </div>
+                
+                <div class="image-thumbnails">
+                    <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Luxury villa exterior view with modern architecture and lush greenery" class="thumbnail active" onclick="changeMainImage('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800', this)" />
+                    <img src="https://i.pinimg.com/736x/28/a4/0b/28a40bb93e63816bf6fc0c73298df717.jpg" alt="Spacious villa living room with contemporary furniture and natural light" class="thumbnail" onclick="changeMainImage('https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=800', this)" />
+                    <img src="https://www.weeks-off.com/_next/image?url=https%3A%2F%2Fweeks-off.lon1.digitaloceanspaces.com%2Fprod%2F1132%2Fconversions%2FVitarel-Tarn-Rental-Atdusk-scaled-responsive.jpg&w=3840&q=75" alt="Modern villa kitchen with sleek appliances and wooden cabinets" class="thumbnail" onclick="changeMainImage('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800', this)" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVK87jK9CpnXNRF6ZkTWN29jedT88xqFqkaw1pi7StEhVI8yqF4cX-y65vizidRMiE5Io&usqp=CAU" alt="Beautiful villa garden with vibrant flowers and outdoor seating" class="thumbnail" onclick="changeMainImage('https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800', this)" />
+                </div>
+            </div>
+
+            <div class="property-info">
+                <h1 class="property-title">Luxury Villa</h1>
+                
+                <div class="property-location-detail">
+                    <i class="fi fi-rr-marker"></i>
+                    <span>789 Green Valley, Annaba</span>
+                </div>
+
+                <div class="property-price-detail">$1500<span class="price-period">/month</span></div>
+
+                <div class="property-rating-detail">
+                    <div class="rating-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="rating-text">8.9 (24 reviews)</span>
+                </div>
+
+                <div class="property-features">
+                    <h3 class="features-title">Features</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fi fi-rr-bed feature-icon"></i>
+                            <span>4 Bedrooms</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fi fi-rr-bath feature-icon"></i>
+                            <span>3 Bathrooms</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fi fi-rr-car feature-icon"></i>
+                            <span>2 Parking</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fi fi-rr-home feature-icon"></i>
+                            <span>2500 sq ft</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fi fi-rr-leaf feature-icon"></i>
+                            <span>Garden</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fi fi-rr-wifi feature-icon"></i>
+                            <span>WiFi Included</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="contact-title">Interested in this property?</h3>
+                    <div class="contact-buttons">
+                        <button class="contact-btn primary">Contact Owner</button>
+                        <button class="contact-btn secondary">Schedule Visit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Sections Below -->
+        <div class="content-wrapper">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Overview Section -->
+                <div class="section-card">
+                    <h2 class="section-title">Overview</h2>
+                    <div class="overview-grid">
+                        <div class="overview-item">
+                            <i class="fi fi-rr-home overview-icon"></i>
+                            <div class="overview-details">
+                                <span class="overview-label">Furnishing Status</span>
+                                <span class="overview-value">Semi</span>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <i class="fi fi-rr-compass overview-icon"></i>
+                            <div class="overview-details">
+                                <span class="overview-label">Facing</span>
+                                <span class="overview-value">East</span>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <i class="fi fi-rr-drop overview-icon"></i>
+                            <div class="overview-details">
+                                <span class="overview-label">Water Supply</span>
+                                <span class="overview-value">Both</span>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <i class="fi fi-rr-building overview-icon"></i>
+                            <div class="overview-details">
+                                <span class="overview-label">Floor</span>
+                                <span class="overview-value">1/1</span>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <i class="fi fi-rr-bath overview-icon"></i>
+                            <div class="overview-details">
+                                <span class="overview-label">Bathroom</span>
+                                <span class="overview-value">2</span>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <i class="fi fi-rr-paw overview-icon"></i>
+                            <div class="overview-details">
+                                <span class="overview-label">Pet Allowed</span>
+                                <span class="overview-value">No</span>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <i class="fi fi-rr-leaf overview-icon"></i>
+                            <div class="overview-details">
+                                <span class="overview-label">Non-Veg Allowed</span>
+                                <span class="overview-value">Yes</span>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <i class="fi fi-rr-shield overview-icon"></i>
+                            <div class="overview-details">
+                                <span class="overview-label">Gated Security</span>
+                                <span class="overview-value">No</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rental Tips Section -->
+                <div class="section-card">
+                    <h2 class="section-title">Rental Tips</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2" style="font-family: 'Inter', sans-serif; font-weight: 400;">
+                        <li>Always inspect the property in person before signing any agreement.</li>
+                        <li>Understand the terms of the lease and clarify any doubts with the landlord.</li>
+                        <li>Check for maintenance responsibilities and utility costs.</li>
+                        <li>Keep a record of all payments and agreements.</li>
+                        <li>Consider renter's insurance for added protection.</li>
+                        <li>Communicate clearly and promptly with your landlord.</li>
+                    </ul>
+                </div>
+
+                <!-- Description Section -->
+                <div class="section-card">
+                    <h2 class="section-title">Description</h2>
+                    <div class="description-rating">
+                        <div class="rating-badge good">6.2</div>
+                        <div class="rating-badge poor">7.9</div>
+                    </div>
+                    <p class="description-text">
+                        This semi furnished double bedroom is available for rent in Bajanai Koil, Bajanai Koil 4th St, Thiruvalluvur Puram, Choolaimedu (from sep 1st available) with bike parking. Take a look before it's gone. All families looking for an apartment will find this home attractive at Rs. 18,000. This East facing home is on the 1st floor & is over 690 sqft.
+                    </p>
+                    <p class="description-text">
+                        With premium amenities such as servant quarters this home provides you with many added benefits.
+                    </p>
+                    <p class="description-text">
+                        With Ampa Skywalk and Rani Arts & Teak nearby, access to all your favourite stores is now a breeze. With Sangam Multiplex, Kamala Cinemas & Ega Theatre close by, you can catch your favourite movies running & never worry about missing a show because of traffic.
+                    </p>
+                    <button class="show-more-btn">Show More <i class="fi fi-rr-angle-down"></i></button>
+                </div>
+
+                <!-- Amenities Section -->
+                <div class="section-card">
+                    <h2 class="section-title">Amenities</h2>
+                    <div class="amenities-list">
+                        <div class="amenity-item">
+                            <i class="fi fi-rr-user amenity-icon"></i>
+                            <span>Servant room</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Neighborhood Section -->
+                <div class="section-card">
+                    <h2 class="section-title">Neighbourhood</h2>
+                    <div class="neighborhood-list">
+                        <div class="neighborhood-item">
+                            <span class="neighborhood-name">ICICI Bank Vadapalani, Chennai-Branch & ATM</span>
+                        </div>
+                        <div class="neighborhood-item">
+                            <span class="neighborhood-name">Tnagar</span>
+                        </div>
+                        <div class="neighborhood-item">
+                            <span class="neighborhood-name">Ambattur</span>
+                        </div>
+                        <div class="neighborhood-item">
+                            <span class="neighborhood-name">TTK Road</span>
+                        </div>
+                        <div class="neighborhood-item">
+                            <span class="neighborhood-name">Vadpalani</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Activity Section -->
+                <div class="section-card">
+                    <h2 class="section-title">Activity On This Property</h2>
+                    <div class="activity-stats">
+                        <div class="activity-item">
+                            <i class="fi fi-rr-eye activity-icon"></i>
+                            <div class="activity-details">
+                                <span class="activity-number">743</span>
+                                <span class="activity-label">Unique Views</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fi fi-rr-heart activity-icon"></i>
+                            <div class="activity-details">
+                                <span class="activity-number">36</span>
+                                <span class="activity-label">Shortlists</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fi fi-rr-phone activity-icon"></i>
+                            <div class="activity-details">
+                                <span class="activity-number">34</span>
+                                <span class="activity-label">Contacted</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="powered-by">
+                        <span>Powered By: <strong>NBEstimate</strong></span>
+                    </div>
+                </div>
+
+                <!-- Rent Trend Section -->
+                <div class="section-card">
+                    <h2 class="section-title">Rent Trend in Chennai</h2>
+                    <div class="rent-trend-chart">
+                        <div class="trend-line">
+                            <div class="trend-point active" data-value="18k"></div>
+                            <div class="trend-line-segment"></div>
+                        </div>
+                        <div class="trend-labels">
+                            <span>14k</span>
+                            <span>15k</span>
+                            <span class="active">18k</span>
+                            <span>19k</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Similar Properties Section -->
+                <div class="section-card">
+                    <h2 class="section-title">Similar Properties</h2>
+                    <div class="similar-properties">
+                        <div class="similar-property">
+                            <img src="https://amazingarchitecture.com/storage/files/1742/architecture-projects/cubism-architects/n-cube-villa/n_cube_villa_cubism_architects_and_interiors_india-01.jpg" alt="2 BHK Flat exterior with balcony and modern design" class="property-image" />
+                            <div class="property-details">
+                                <h4 class="property-name">2 BHK Flat In Shree Appartment, Chen...</h4>
+                                <p class="property-location">25 South Gangai Amman Koil 2nd Street</p>
+                                <div class="property-distance">Within 1 km</div>
+                                <div class="property-info-row">
+                                    <span class="property-type">Rent</span>
+                                    <span class="property-area">Area</span>
+                                </div>
+                                <div class="property-info-row">
+                                    <span class="property-price">₹15000</span>
+                                    <span class="property-size">890 Sqft</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="similar-property">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrv2xJ_0RBY4u8dIM38nYcQ3ywM5NfCXeZ2Gi0tRwJkmYpULgup1T6mnJmAV_5tU39XZs&usqp=CAU" alt="2 BHK Flat with spacious balcony and city view" class="property-image" />
+                            <div class="property-details">
+                                <h4 class="property-name">2 BHK Flat In Standalone Building, for ...</h4>
+                                <p class="property-location">Gugan Street, Near Kodambakkam Power House</p>
+                                <div class="property-distance">1.2 km away</div>
+                                <div class="property-info-row">
+                                    <span class="property-type">Rent</span>
+                                    <span class="property-area">Area</span>
+                                </div>
+                                <div class="property-info-row">
+                                    <span class="property-price">₹16000</span>
+                                    <span class="property-size">900 Sqft</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="similar-property">
+                            <img src="https://www.buildofy.com/blog/content/images/2022/05/Villa-11.jpg" alt="2 BHK Flat with modern interiors and balcony" class="property-image" />
+                            <div class="property-details">
+                                <h4 class="property-name">2 BHK Flat for Rent in Arumbakkam</h4>
+                                <p class="property-location">Standalone building, MMDA Colony Near Arumbakka...</p>
+                                <div class="property-distance">1.2 km away</div>
+                                <div class="property-info-row">
+                                    <span class="property-type">Rent</span>
+                                    <span class="property-area">Area</span>
+                                </div>
+                                <div class="property-info-row">
+                                    <span class="property-price">₹18000</span>
+                                    <span class="property-size">1000 Sqft</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="more-properties-btn">More 2 BHK Properties for rent in Choolaimedu</button>
+                </div>
+
+                <!-- Expanded Rental Information Section -->
+                <div class="section-card">
+                    <h2 class="section-title">More About Renting</h2>
+                    <p style="color:#666; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.6; margin-bottom: 15px;">
+                        Renting a property is a significant decision that requires careful consideration. Always ensure you understand the lease terms, including duration, rent increases, and maintenance responsibilities. It's advisable to document the property's condition before moving in to avoid disputes later.
+                    </p>
+                    <p style="color:#666; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.6; margin-bottom: 15px;">
+                        Consider the neighborhood's safety, accessibility to public transport, and proximity to essential services like schools, hospitals, and shopping centers. Communicating openly with your landlord and neighbors can enhance your renting experience.
+                    </p>
+                    <p style="color:#666; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.6;">
+                        Lastly, always keep a copy of your rental agreement and receipts for rent payments. This documentation protects your rights and ensures a smooth rental journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeMainImage(src, thumbnail) {
+            document.getElementById('mainImage').src = src;
+            
+            // Remove active class from all thumbnails
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            
+            // Add active class to clicked thumbnail
+            thumbnail.classList.add('active');
+        }
+
+        // Show more functionality
+        document.querySelector('.show-more-btn').addEventListener('click', function() {
+            // Add more content or expand description
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
